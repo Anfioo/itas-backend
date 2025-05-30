@@ -14,6 +14,7 @@ public class User extends BaseEntity {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
+
     @QueryCondition(strategy = QueryStrategy.LIKE)
     private String username;
     private String password;

@@ -4,38 +4,4 @@
 
 <mapper namespace="com.itas.itasbackend.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.itas.itasbackend.entity.User">
-        <id property="id" column="id"/>
-        <result property="username" column="username"/>
-        <result property="password" column="password"/>
-        <result property="roleId" column="role_id"/>
-        <result property="createdAt" column="created_at"/>
-        <result property="updatedAt" column="updated_at"/>
-    </resultMap>
-
-    <select id="selectById" resultMap="BaseResultMap">
-        SELECT * FROM user WHERE id = #{id}
-    </select>
-
-    <select id="selectAll" resultMap="BaseResultMap">
-        SELECT * FROM user
-    </select>
-
-    <insert id="insert" parameterType="com.itas.itasbackend.entity.User">
-        INSERT INTO user (username, password, role_id)
-        VALUES (#{username}, #{password}, #{roleId})
-    </insert>
-
-    <update id="update" parameterType="com.itas.itasbackend.entity.User">
-        UPDATE user
-        SET username = #{username},
-            password = #{password},
-            role_id = #{roleId}
-        WHERE id = #{id}
-    </update>
-
-    <delete id="deleteById" parameterType="int">
-        DELETE FROM user WHERE id = #{id}
-    </delete>
-
 </mapper>
