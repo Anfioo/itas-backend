@@ -21,6 +21,14 @@ CREATE TABLE `role`
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
 
+
+
+
+
+
+
+
+
 -- 课程表 course
 CREATE TABLE `course`
 (
