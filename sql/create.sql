@@ -45,7 +45,7 @@ CREATE TABLE `chapter`
     `updated_at`     DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
-啊
+
 -- 学生表 student
 CREATE TABLE `student`
 (
