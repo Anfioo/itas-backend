@@ -2,9 +2,9 @@ package com.itas.itasbackend.util;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.itas.itasbackend.query.QueryAutoCondition;
-import com.itas.itasbackend.query.QueryCondition;
-import com.itas.itasbackend.query.QueryStrategy;
+import com.itas.itasbackend.core.QueryAutoCondition;
+import com.itas.itasbackend.core.QueryCondition;
+import com.itas.itasbackend.core.QueryStrategy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

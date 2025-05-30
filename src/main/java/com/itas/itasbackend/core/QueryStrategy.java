@@ -1,4 +1,4 @@
-package com.itas.itasbackend.query;
+package com.itas.itasbackend.core;
 
 /**
  * 查询策略枚举类，用于指定构建查询条件时的操作类型。

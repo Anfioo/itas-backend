@@ -1,4 +1,4 @@
-package com.itas.itasbackend.query;
+package com.itas.itasbackend.core;
 
 
 
