@@ -28,11 +28,6 @@ public class SysUser extends BaseEntity {
     private String nickName;
     @QueryCondition(strategy = QueryStrategy.LIKE)
     private String phoneNumber;
-    @QueryCondition(strategy = QueryStrategy.LIKE)
-    private LocalDateTime createTime;
-    @QueryCondition(strategy = QueryStrategy.LIKE)
-    private LocalDateTime updateTime;
-
 
     private String password;
     private String email;
@@ -74,21 +69,6 @@ public class SysUser extends BaseEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    public LocalDateTime getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(LocalDateTime createTime) {
-        this.createTime = createTime;
-    }
-
-    public LocalDateTime getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(LocalDateTime updateTime) {
-        this.updateTime = updateTime;
-    }
 
     public String getPassword() {
         return password;

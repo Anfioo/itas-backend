@@ -36,13 +36,7 @@ public class SysUserController extends BaseController {
         return user != null ? success(user) : error("用户不存在");
     }
 
-    @GetMapping("/list")
-    public ApiResponse<List<SysUser>> list(@ModelAttribute SysUser query) {
-        LambdaQueryWrapper<SysUser> wrapper = new LambdaQueryWrapper<>();
-        wrapper.like(query.getUserName() != null, SysUser::getUserName, query.getUserName());
-        List<SysUser> list = userService.list(wrapper);
-        return success(list);
-    }
+
 
     @GetMapping("/page")
     public ApiResponse<PageResult<SysUser>> page(

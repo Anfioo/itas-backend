@@ -9,29 +9,27 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @QueryAutoCondition
-
 public class BaseEntity implements Serializable {
-//    @QueryCondition(strategy = QueryStrategy.LIKE)
-//    private LocalDateTime createdAt;
-//    @QueryCondition(strategy = QueryStrategy.LIKE)
-//    private LocalDateTime updatedAt;
-//
-//
-//    public LocalDateTime getCreatedAt() {
-//        return createdAt;
-//    }
-//
-//    public void setCreatedAt(LocalDateTime createdAt) {
-//        this.createdAt = createdAt;
-//    }
-//
-//    public LocalDateTime getUpdatedAt() {
-//        return updatedAt;
-//    }
-//
-//    public void setUpdatedAt(LocalDateTime updatedAt) {
-//        this.updatedAt = updatedAt;
-//    }
+
+    @QueryCondition(strategy = QueryStrategy.LIKE)
+    private LocalDateTime createTime;
+    @QueryCondition(strategy = QueryStrategy.LIKE)
+    private LocalDateTime updateTime;
 
 
+    public LocalDateTime getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(LocalDateTime createTime) {
+        this.createTime = createTime;
+    }
+
+    public LocalDateTime getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(LocalDateTime updateTime) {
+        this.updateTime = updateTime;
+    }
 }

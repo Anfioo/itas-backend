@@ -49,19 +49,7 @@ public class SysRoleController extends BaseController {
         return role != null ? success(role) : error("角色不存在");
     }
 
-    /**
-     * 获取角色列表（支持按角色名称模糊查询）
-     *
-     * @param query 查询条件对象
-     * @return 包含角色列表的响应结果
-     */
-    @GetMapping("/list")
-    public ApiResponse<List<SysRole>> list(@ModelAttribute SysRole query) {
-        LambdaQueryWrapper<SysRole> wrapper = new LambdaQueryWrapper<>();
-        wrapper.like(query.getRoleName() != null, SysRole::getRoleName, query.getRoleName());
-        List<SysRole> list = roleService.list(wrapper);
-        return success(list);
-    }
+
 
     /**
      * 分页查询角色列表
