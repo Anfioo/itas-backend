@@ -12,7 +12,6 @@ public class Class extends BaseEntity {
     @TableId
     private Long classId;
 
-    private Long courseId;
 
     @QueryCondition(strategy = QueryStrategy.LIKE)
     private String className;
@@ -25,13 +24,6 @@ public class Class extends BaseEntity {
         this.classId = classId;
     }
 
-    public Long getCourseId() {
-        return courseId;
-    }
-
-    public void setCourseId(Long courseId) {
-        this.courseId = courseId;
-    }
 
     public String getClassName() {
         return className;

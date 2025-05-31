@@ -101,9 +101,12 @@ VALUES
     (5010, 1002, NULL, '章节', '第二讲：栈与队列', '介绍栈和队列的基本概念及其在编程中的应用。');
 
 
-INSERT INTO classes (class_id, course_id,class_name) VALUES
-                                               (22,1, '软工1班'),
-                                               (22, 2,'软工2班');
+INSERT INTO classes (class_id,class_name) VALUES
+                                               (7001, '软工1班'),
+                                               (7002, '软工2班');
+
+
+
 
 INSERT INTO classrooms (classroom_id, building, room_number, capacity, status)
 VALUES
